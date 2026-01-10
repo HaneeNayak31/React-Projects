@@ -1,8 +1,8 @@
 const Footer = () => {
   return (
-    <footer className="bg-white dark:bg-black py-12 px-6">
+    <footer className="bg-white dark:bg-black py-8 px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="bg-white dark:bg-black rounded-2xl  p-8 md:p-12">
+        <div className="bg-white dark:bg-black rounded-2xl  p-8">
           <div className="flex flex-col items-center gap-8">
             {/* Social Icons */}
             <div className="flex gap-6">
@@ -34,7 +34,7 @@ const Footer = () => {
 
             {/* Copyright & Text */}
             <div className="text-center">
-              <p className="text-xl font-semibold text-sky-900 dark:text-white mb-2">
+              <p className="text-lg font-semibold text-sky-900 dark:text-white mb-2">
                 Hanee Nayak
               </p>
               <p className="text-sky-700 dark:text-sky-300">

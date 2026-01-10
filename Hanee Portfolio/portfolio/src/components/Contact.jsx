@@ -26,29 +26,29 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="scroll-mt-10 min-h-screen flex justify-center items-center px-6 py-20"
+      className="scroll-mt-10 min-h-screen flex justify-center items-center px-6 py-16"
     >
       <div className="max-w-7xl w-full bg-white dark:bg-black rounded-2xl shadow-2xl overflow-hidden">
-        <div className="p-12 md:p-16">
+        <div className="p-8 md:p-12">
           {/* Header */}
           <div className="text-center mb-12">
-            <h2 className="text-7xl md:text-8xl font-extrabold text-sky-900 dark:text-white mb-6">
+            <h2 className="text-5xl md:text-6xl font-extrabold text-sky-900 dark:text-white mb-4">
               Get In <span className="text-sky-700">Touch</span>
             </h2>
-            <p className="text-xl font-semibold text-sky-900 dark:text-white max-w-3xl mx-auto">
+            <p className="text-lg font-semibold text-sky-900 dark:text-white max-w-3xl mx-auto">
               Have a project in mind or want to collaborate? Let's talk!
             </p>
           </div>
 
           {/* Contact Container */}
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid md:grid-cols-2 gap-8">
             {/* Contact Information */}
             <div className="space-y-8">
               <div>
-                <h3 className="text-3xl font-bold text-sky-900 dark:text-white mb-4">
+                <h3 className="text-2xl font-bold text-sky-900 dark:text-white mb-4">
                   Contact Information
                 </h3>
-                <p className="text-lg text-sky-800 dark:text-gray-300">
+                <p className="text-base text-sky-800 dark:text-gray-300">
                   Feel free to reach out to me through any of the channels
                   below. I'll be happy to discuss your project or answer any
                   questions.
@@ -66,30 +66,15 @@ const Contact = () => {
                       Email
                     </p>
                     <a
-                      href="mailto:your@email.com"
-                      className="text-lg font-bold text-sky-900 dark:text-white hover:text-sky-700 transition-colors"
+                      href="mailto:haneenyk3106@gmail.com"
+                      className="text-base font-bold text-sky-900 dark:text-white hover:text-sky-700 transition-colors"
                     >
-                      your@email.com
+                      haneenyk3106@gmail.com
                     </a>
                   </div>
                 </div>
 
-                <div className="flex items-center gap-4">
-                  <div className="p-4 rounded-full bg-sky-700 text-white shadow-lg">
-                    <i className="fas fa-phone text-2xl"></i>
-                  </div>
-                  <div>
-                    <p className="text-sm text-sky-700 dark:text-sky-300 font-semibold">
-                      Phone
-                    </p>
-                    <a
-                      href="tel:+1234567890"
-                      className="text-lg font-bold text-sky-900 dark:text-white hover:text-sky-700 transition-colors"
-                    >
-                      +91 9876543210
-                    </a>
-                  </div>
-                </div>
+
 
                 <div className="flex items-center gap-4">
                   <div className="p-4 rounded-full bg-sky-700 text-white shadow-lg">
@@ -99,7 +84,7 @@ const Contact = () => {
                     <p className="text-sm text-sky-700 dark:text-sky-300 font-semibold">
                       Location
                     </p>
-                    <p className="text-lg font-bold text-sky-900 dark:text-white">
+                    <p className="text-base font-bold text-sky-900 dark:text-white">
                       India
                     </p>
                   </div>
@@ -136,9 +121,9 @@ const Contact = () => {
 
             {/* Contact Form */}
             <div className="bg-white dark:bg-zinc-900 p-8 rounded-2xl border-2 border-sky-700 shadow-lg">
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
-                  <label className="block text-lg font-semibold text-sky-900 dark:text-white mb-3">
+                  <label className="block text-base font-semibold text-sky-900 dark:text-white mb-2">
                     Full Name
                   </label>
                   <input
@@ -148,12 +133,12 @@ const Contact = () => {
                     onChange={handleChange}
                     placeholder="Your Name"
                     required
-                    className="w-full px-6 py-3 rounded-lg bg-white dark:bg-black border-2 border-sky-700 text-sky-900 dark:text-white placeholder-sky-600 dark:placeholder-sky-600 focus:outline-none focus:ring-2 focus:ring-sky-700 transition-all"
+                    className="w-full px-4 py-2 rounded-lg bg-white dark:bg-black border-2 border-sky-700 text-sky-900 dark:text-white placeholder-sky-600 dark:placeholder-sky-600 focus:outline-none focus:ring-2 focus:ring-sky-700 transition-all text-base"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-lg font-semibold text-sky-900 dark:text-white mb-3">
+                  <label className="block text-base font-semibold text-sky-900 dark:text-white mb-2">
                     Email Address
                   </label>
                   <input
@@ -163,12 +148,12 @@ const Contact = () => {
                     onChange={handleChange}
                     placeholder="your@email.com"
                     required
-                    className="w-full px-6 py-3 rounded-lg bg-white dark:bg-black border-2 border-sky-700 text-sky-900 dark:text-white placeholder-sky-600 dark:placeholder-sky-600 focus:outline-none focus:ring-2 focus:ring-sky-700 transition-all"
+                    className="w-full px-4 py-2 rounded-lg bg-white dark:bg-black border-2 border-sky-700 text-sky-900 dark:text-white placeholder-sky-600 dark:placeholder-sky-600 focus:outline-none focus:ring-2 focus:ring-sky-700 transition-all text-base"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-lg font-semibold text-sky-900 dark:text-white mb-3">
+                  <label className="block text-base font-semibold text-sky-900 dark:text-white mb-2">
                     Message
                   </label>
                   <textarea
@@ -178,13 +163,13 @@ const Contact = () => {
                     placeholder="Your message..."
                     rows="5"
                     required
-                    className="w-full px-6 py-3 rounded-lg bg-white dark:bg-black border-2 border-sky-700 text-sky-900 dark:text-white placeholder-sky-600 dark:placeholder-sky-600 focus:outline-none focus:ring-2 focus:ring-sky-700 transition-all resize-none"
+                    className="w-full px-4 py-2 rounded-lg bg-white dark:bg-black border-2 border-sky-700 text-sky-900 dark:text-white placeholder-sky-600 dark:placeholder-sky-600 focus:outline-none focus:ring-2 focus:ring-sky-700 transition-all resize-none text-base"
                   ></textarea>
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full px-8 py-4 bg-sky-900 text-white border-2 border-sky-700 rounded-lg font-bold text-lg hover:bg-sky-800 transition-all shadow-lg hover:shadow-xl"
+                  className="w-full px-6 py-3 bg-sky-900 text-white border-2 border-sky-700 rounded-lg font-bold text-base hover:bg-sky-800 transition-all shadow-lg hover:shadow-xl"
                 >
                   Send Message <i className="fas fa-paper-plane ml-2"></i>
                 </button>
