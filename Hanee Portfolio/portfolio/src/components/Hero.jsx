@@ -63,18 +63,28 @@ export default function Hero() {
               roles with opportunities for professional growth.
             </p>
 
-            <div className="flex gap-6 pt-6">
+            <div className="flex flex-col items-start gap-4 pt-6">
+              <div className="flex flex-wrap gap-4">
+                <a
+                  href="#projects"
+                  className="px-6 py-3 bg-sky-900 text-white border-4 border-sky-900 rounded-3xl hover:bg-sky-800 transition font-bold text-lg"
+                >
+                  View Work <i className="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+                <a
+                  href="#contact"
+                  className="px-6 py-3 border-2 border-sky-700 text-sky-600 dark:text-white dark:border-sky-600 rounded-3xl hover:bg-sky-900 hover:text-white transition font-bold text-lg"
+                >
+                  Get In Touch
+                </a>
+
+              </div>
               <a
-                href="#projects"
-                className="px-6 py-3 bg-sky-900 text-white border-4 border-sky-900 rounded-3xl hover:bg-sky-800 transition font-bold text-lg"
+                href="/Resume.pdf"
+                download="Hanee_Nayak_Resume.pdf"
+                className="text-sky-700 dark:text-sky-300 font-semibold hover:underline ml-2 flex items-center gap-2"
               >
-                View Work <i className="fa-solid fa-arrow-right ml-2"></i>
-              </a>
-              <a
-                href="#contact"
-                className="px-6 py-3 border-2 border-sky-700 text-sky-600 dark:text-white dark:border-sky-600 rounded-3xl hover:bg-sky-900 hover:text-white transition font-bold text-lg"
-              >
-                Get In Touch
+                <i className="fas fa-download"></i> Download Resume
               </a>
             </div>
           </div>

@@ -15,12 +15,27 @@ const Contact = () => {
     }));
   };
 
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your form submission logic here
-    console.log("Form submitted:", formData);
-    alert("Thank you for reaching out! I'll get back to you soon.");
-    setFormData({ name: "", email: "", message: "" });
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...formData }),
+    })
+      .then(() => {
+        alert("Thank you for reaching out! I'll get back to you soon.");
+        setFormData({ name: "", email: "", message: "" });
+      })
+      .catch((error) => alert(error));
   };
 
   return (
@@ -121,7 +136,14 @@ const Contact = () => {
 
             {/* Contact Form */}
             <div className="bg-white dark:bg-zinc-900 p-8 rounded-2xl border-2 border-sky-700 shadow-lg">
-              <form onSubmit={handleSubmit} className="space-y-4">
+              <form
+                name="contact"
+                method="POST"
+                data-netlify="true"
+                onSubmit={handleSubmit}
+                className="space-y-4"
+              >
+                <input type="hidden" name="form-name" value="contact" />
                 <div>
                   <label className="block text-base font-semibold text-sky-900 dark:text-white mb-2">
                     Full Name
