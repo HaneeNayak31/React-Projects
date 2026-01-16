@@ -1,14 +1,11 @@
 export const projects = [
   {
-    title: "Personal Portfolio",
-    description:
-      `Dynamic Theme System and Custom Hooks, instant theme switching.
-single-page application (SPA),modular components,smooth UX, without page reloads, responsive and consistent across all device sizes`,
-    tags: ["React","Custom Hooks", "Tailwind CSS","Context API"],
-    image: "/portfolio.png",
-    links: { demo: "#", code: "https://github.com/HaneeNayak31/React-Projects/tree/main/Hanee%20Portfolio/portfolio" },
+    title: "Transaction Dashboard (Vanilla JavaScript)",
+    description: "Performance-oriented dashboard using Vanilla JS. Features RESTful integrations, dynamic filtering, sorting, pagination, and localStorage.",
+    tags: ["JavaScript", "HTML5", "CSS3", "REST APIs", "DOM manipulation"],
+    image: "/Transaction_Dash.png",
+    links: { demo: "/Transaction_Dash.mp4", code: "https://github.com/HaneeNayak31/JavaScript-Projects/tree/main/Transaction_Dashboard" },
   },
-  
   {
     title: "World Wise",
     description:
@@ -35,6 +32,15 @@ giving priority to order adds charges.After placing order shows the order status
     tags: ["React", "UseReducer", "CSS"],
     image: "/reactquiz.png",
     links: { demo: "#", code: "https://github.com/HaneeNayak31/React-Projects/tree/main/REACT%20QUIZ" },
+  },
+  {
+    title: "Personal Portfolio",
+    description:
+      `Dynamic Theme System and Custom Hooks, instant theme switching.
+single-page application (SPA),modular components,smooth UX, without page reloads, responsive and consistent across all device sizes`,
+    tags: ["React","Custom Hooks", "Tailwind CSS","Context API"],
+    image: "/portfolio.png",
+    links: { demo: "#", code: "https://github.com/HaneeNayak31/React-Projects/tree/main/Hanee%20Portfolio/portfolio" },
   },
   {
     title: "TODO App",
@@ -72,4 +78,5 @@ giving priority to order adds charges.After placing order shows the order status
     image: "/WeatherApp.mp4",
     links: { demo: "/WeatherApp.mp4", code: "https://github.com/HaneeNayak31/JavaScript-Projects/tree/main/WEATHER_API" },
   },
+  
 ];

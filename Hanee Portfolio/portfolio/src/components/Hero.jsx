@@ -34,15 +34,15 @@ export default function Hero() {
       className="scroll-mt-5 min-h-screen flex justify-center items-center px-6 py-16"
     >
       <div className="max-w-7xl w-full bg-white dark:bg-black rounded-2xl shadow-2xl overflow-hidden">
-        <div className="grid md:grid-cols-2 gap-8 items-center p-8 md:p-12 min-h-96">
-          {/* Image on Left */}
-          <div className="flex justify-center">
-            <img
-              src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=500"
-              alt="Profile"
-              className="w-80 h-auto object-cover rounded-2xl shadow-xl"
-            />
-          </div>
+          <div className="grid md:grid-cols-[1fr_2fr] gap-8 items-center p-8 md:p-12 min-h-96">
+            {/* Image on Left */}
+            <div className="flex justify-center">
+              <img
+                src="/profile photo.png"
+                alt="Profile"
+                className="w-56 h-56 object-cover rounded-2xl shadow-xl"
+              />
+            </div>
 
           {/* Text Content on Right */}
           <div className="space-y-8">
