@@ -1,16 +1,37 @@
-# React + Vite
+# Hanee Portfolio 🎨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal portfolio website built to showcase skills, projects, and contact information. This project features a clean design with a dark/light theme toggle and smooth navigation.
 
-Currently, two official plugins are available:
+## 🚀 About the Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This portfolio serves as a central hub for professional identity, allowing for the display of work experience, technical skills, and completed projects. It is designed with a focus on user experience, offering a seamless and interactive browsing flow across different devices.
 
-## React Compiler
+## ✨ Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+-   **Dynamic Theme Switcher**: Toggle between Dark and Light modes with a global theme context, persisting user preference.
+-   **Responsive Design**: Fully responsive layout optimized for mobile, tablet, and desktop views using Tailwind CSS.
+-   **Interactive Sections**:
+    -   **Hero**: Introduction and resume download.
+    -   **Skills**: Visual representation of technical expertise.
+    -   **Projects**: Showcase of recent work with descriptions and links.
+    -   **Contact**: Simple contact area.
+-   **Component-Based Architecture**: Modular design with reusable components for Navbar, Footer, and content sections.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This project is built with the latest modern web technologies:
+
+-   **React 19**: Utilizing the newest features of React for robust component management.
+-   **Vite**: Extremely fast build tool and development server.
+-   **Tailwind CSS v4**: Utility-first CSS framework for rapid and highly customizable styling.
+-   **Context API**: Manage global state for theming across the application.
+
+## 🏗️ How It Works
+
+The application is structured as a Single Page Application (SPA):
+1.  **Theme Management**: A `ThemeContextProvider` wraps the application, supplying the current theme (light/dark) to all components. The theme state is applied directly to the HTML root element.
+2.  **Section Navigation**: Navigation allows users to jump to different parts of the page (Hero, Skills, Projects, etc.).
+3.  **Data Handling**: Component data (like project lists or skills) is closely co-located or managed via props/utility files for easy updates.
+
+---
+*Built with passion and code.*
