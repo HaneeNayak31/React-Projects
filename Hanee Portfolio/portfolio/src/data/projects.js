@@ -1,9 +1,16 @@
 export const projects = [
   {
+    title: "FinDash - Finance Dashboard",
+    description: "High-fidelity finance dashboard featuring glassmorphism design, smooth Framer Motion animations, and responsive UI. Includes balance toggling, quick transfers, and transaction history.",
+    tags: ["Next.js", "React 19", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    image: "/findash.mp4",
+    links: { demo: "#", code: "https://github.com/HaneeNayak31/React-Projects/tree/main/payit-finance-dashboard" },
+  },
+  {
     title: "Transaction Dashboard (Vanilla JavaScript)",
     description: "Performance-oriented dashboard using Vanilla JS. Features RESTful integrations, dynamic filtering, sorting, pagination, and localStorage.",
     tags: ["JavaScript", "HTML5", "CSS3", "REST APIs", "DOM manipulation"],
-    image: "/Transaction_Dash.png",
+    image: "/Transaction_Dash.mp4",
     links: { demo: "/Transaction_Dash.mp4", code: "https://github.com/HaneeNayak31/JavaScript-Projects/tree/main/Transaction_Dashboard" },
   },
   {
@@ -11,7 +18,7 @@ export const projects = [
     description:
       "a note making app for the destinations you have travelled to using map pointer(map api) and json-server (mock API)",
     tags: ["React", "React Router", "context API", "memo", "useMemo", "useCallback"],
-    image: "/worldwise.png",
+    image: "/worldwise.mp4",
     links: { demo: "#", code: "https://github.com/HaneeNayak31/React-Projects/tree/main/worldwise_final" },
   },
   {
@@ -22,7 +29,7 @@ quantity.
 ,add to cart feature,takes user details for placing order ,
 giving priority to order adds charges.After placing order shows the order status`,
     tags: ["React","React Router","data loading", "Redux", "Redux Toolkit", "thunks", "Tailwind CSS"],
-    image: "/pizzapp.png",
+    image: "/fast-react-pizza.mp4",
     links: { demo: "#", code: "https://github.com/HaneeNayak31/React-Projects/tree/main/fast-react-pizza" },
   },
   {

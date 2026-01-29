@@ -25,40 +25,40 @@
       "id": 17806751
     },
     {
-      "cityName": "Berlin",
-      "country": "Germany",
-      "emoji": "🇩🇪",
-      "date": "2027-02-12T09:24:11.863Z",
-      "notes": "Amazing 😃",
+      "cityName": "Larvik",
+      "country": "Norway",
+      "emoji": "🇳🇴",
+      "date": "2026-01-29T04:12:39.397Z",
+      "notes": "had fun!!!",
       "position": {
-        "lat": 52.53586782505711,
-        "lng": 13.376933665713324
+        "lat": "59.445075099047166",
+        "lng": "9.843750000000002"
       },
-      "id": 98443197
+      "id": 73930386
     },
     {
-      "cityName": "Nijar",
+      "cityName": "Vilanova de l'Aguda",
       "country": "Spain",
       "emoji": "🇪🇸",
-      "date": "2023-04-03T07:47:59.202Z",
-      "notes": "",
+      "date": "2026-01-29T04:14:45.805Z",
+      "notes": "good place",
       "position": {
-        "lat": "36.967508314568164",
-        "lng": "-2.13128394200588"
+        "lat": "41.88592102814744",
+        "lng": "1.2524414062500002"
       },
-      "id": 98443198
+      "id": 73930387
     },
     {
-      "cityName": "Bharuch",
+      "cityName": "Surendranagar",
       "country": "India",
       "emoji": "🇮🇳",
-      "date": "2026-01-03T14:26:06.805Z",
-      "notes": "good",
+      "date": "2026-01-29T04:15:12.275Z",
+      "notes": "must visit!!!!",
       "position": {
-        "lat": "21.718679805703154",
-        "lng": "72.83935546875001"
+        "lat": "22.755920681486405",
+        "lng": "71.71875000000001"
       },
-      "id": 98443199
+      "id": 73930388
     }
   ]
 }
