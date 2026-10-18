@@ -1,0 +1,9 @@
+import { useState } from "react";
+
+function Contact() {
+  const [sent, setSent] = useState(false);
+
+  return <section className="section-shell contact-section" id="contact"><div className="contact-panel"><div className="contact-heading"><span className="eyebrow">Contact</span><h2>Have a useful idea?<br /><em>Let&apos;s make it real.</em></h2><p>I&apos;m open to conversations about frontend engineering, full-stack products, and thoughtful teams. Send a note through the form or find me online.</p><div className="social-links"><a href="https://www.linkedin.com/in/hanee-nayak-8ba045280/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/HaneeNayak31" target="_blank" rel="noreferrer">GitHub ↗</a></div></div><form className="contact-form" name="portfolio-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/?success=true#contact" onSubmit={() => setSent(true)}><input type="hidden" name="form-name" value="portfolio-contact" /><p className="hidden-field"><label>Don&apos;t fill this out: <input name="bot-field" /></label></p><div className="form-field"><label htmlFor="name">Name</label><input id="name" name="name" type="text" placeholder="Your name" required /></div><div className="form-field"><label htmlFor="email">Email</label><input id="email" name="email" type="email" placeholder="you@example.com" required /></div><div className="form-field"><label htmlFor="message">Message</label><textarea id="message" name="message" rows="5" placeholder="Tell me a little about what you&apos;re building." required /></div><button className="button button-light" type="submit">Send message <span>↗</span></button>{sent && <p className="form-note" role="status">Thanks — your message is ready to be sent through the site.</p>}</form></div></section>;
+}
+
+export default Contact;

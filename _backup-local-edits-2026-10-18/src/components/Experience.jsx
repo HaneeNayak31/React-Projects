@@ -1,0 +1,5 @@
+function Experience() {
+  return <section className="section-shell experience-section" id="experience"><div className="section-heading compact"><span className="eyebrow">Experience</span><h2>Shipping beyond<br /><em>the tutorial.</em></h2></div><div className="experience-row"><div className="experience-date">6-month internship</div><div className="experience-main"><div className="experience-title"><h3>Frontend Developer Intern</h3><a href="https://growmytherapy.com/" target="_blank" rel="noreferrer">Grow My Therapy ↗</a></div><p>Worked on real client websites for therapy practices, from responsive UI and custom forms to the last mile of deployment. A practical introduction to building software that has to be clear, resilient, and easy for someone else to maintain.</p><ul><li>Developed and maintained 10+ production websites using Next.js, React, TypeScript, and Tailwind CSS.</li><li>Integrated Stripe and third-party APIs, and handled deployment, DNS, SSL, and Cloudflare configuration.</li><li>Debugged production issues and translated changing client requirements into focused frontend work.</li></ul></div></div></section>;
+}
+
+export default Experience;
