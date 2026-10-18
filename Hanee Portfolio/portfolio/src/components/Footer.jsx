@@ -1,48 +1,49 @@
+import { site } from "../data/site";
+import Icon from "./Icon";
+
 const Footer = () => {
   return (
-    <footer className="bg-white dark:bg-black py-8 px-6">
-      <div className="max-w-7xl mx-auto">
-        <div className="bg-white dark:bg-black rounded-2xl  p-8">
-          <div className="flex flex-col items-center gap-8">
-            {/* Social Icons */}
-            <div className="flex gap-6">
-              <a
-                href="https://github.com/HaneeNayak31"
-                className="p-4 rounded-full bg-sky-900 text-white hover:bg-sky-800 transition-all transform hover:scale-110 shadow-lg"
-                title="GitHub"
-              >
-                <i className="fab fa-github text-2xl"></i>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/hanee-nayak-8ba045280/"
-                className="p-4 rounded-full bg-sky-900 text-white hover:bg-sky-800 transition-all transform hover:scale-110 shadow-lg"
-                title="LinkedIn"
-              >
-                <i className="fab fa-linkedin text-2xl"></i>
-              </a>
-              <a
-                href="#leetcode"
-                className="p-4 rounded-full bg-sky-900 text-white hover:bg-sky-800 transition-all transform hover:scale-110 shadow-lg"
-                title="LeetCode"
-              >
-                <i className="fas fa-code text-2xl"></i>
-              </a>
-            </div>
-
-            {/* Divider */}
-            <div className="w-full h-px bg-blue-600"></div>
-
-            {/* Copyright & Text */}
-            <div className="text-center">
-              <p className="text-lg font-semibold text-sky-900 dark:text-white mb-2">
-                Hanee Nayak
-              </p>
-              <p className="text-sky-700 dark:text-sky-300">
-                © {new Date().getFullYear()} All rights reserved.
-              </p>
-            </div>
-          </div>
+    <footer className="site-footer">
+      <div className="container footer-inner">
+        <p>
+          © {new Date().getFullYear()} {site.name}
+        </p>
+        <div className="footer-contact">
+          <a href={`mailto:${site.email}`}>{site.email}</a>
         </div>
+        <ul className="footer-links">
+          <li>
+            <a
+              href={site.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <Icon name="github" />
+            </a>
+          </li>
+          <li>
+            <a
+              href={site.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <Icon name="linkedin" />
+            </a>
+          </li>
+          <li>
+            <a href={site.leetcode} target="_blank" rel="noopener noreferrer">
+              LeetCode
+            </a>
+          </li>
+          <li>
+            <a href={`mailto:${site.email}`}>Email</a>
+          </li>
+          <li>
+            <a href="#main">Back to top ↑</a>
+          </li>
+        </ul>
       </div>
     </footer>
   );

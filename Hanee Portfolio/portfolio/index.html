@@ -2,20 +2,44 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio</title>
+    <title>Hanee Nayak — Software Developer</title>
+    <meta
+      name="description"
+      content="Hanee Nayak is a software developer and final-year Computer Engineering student building full-stack web applications, with production experience on 10+ client websites."
+    />
+    <meta property="og:title" content="Hanee Nayak — Software Developer" />
+    <meta property="og:description" content="Computer Engineering student and software developer: full-stack web apps and production websites." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/images/profile-photo.webp" />
+    <meta name="theme-color" content="#151613" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,500;0,8..60,600;1,8..60,500;1,8..60,600&display=swap"
     />
+    <!-- Apply the saved theme before the page paints, so there's no flash. -->
+    <script>
+      (function () {
+        var theme = "dark";
+        try {
+          var saved = localStorage.getItem("theme");
+          if (saved === "light" || saved === "dark") theme = saved;
+        } catch (e) {}
+        document.documentElement.classList.add(theme);
+      })();
+    </script>
   </head>
-  <body class="scroll-smooth">
+  <body>
     <div id="root"></div>
+    <!-- Registers the contact form with Netlify at deploy time. Keep the fields in sync with Contact.jsx. -->
     <form name="contact" netlify netlify-honeypot="bot-field" hidden>
       <input type="text" name="name" />
       <input type="email" name="email" />
       <textarea name="message"></textarea>
+      <input name="bot-field" />
     </form>
     <script type="module" src="/src/main.jsx"></script>
   </body>

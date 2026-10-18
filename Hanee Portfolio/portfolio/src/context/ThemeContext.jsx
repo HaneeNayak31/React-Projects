@@ -4,4 +4,5 @@ export const ThemeContext = createContext({
   themeMode: "light",
   darkTheme: () => {},
   lightTheme: () => {},
+  toggleTheme: () => {},
 });
